@@ -1,4 +1,14 @@
-def show_games():
-    print("=== Каталог настольных игр ===")
-    for number, game in enumerate(games, start=1):
-        print("")
+from games import *
+
+games = [
+    {
+        "name": "Каркассон",
+        "genre": "Стратегия"
+    },
+    {
+        "name": "Диксит",
+        "genre": "Воображение"
+    }
+]
+
+show_games(games)
